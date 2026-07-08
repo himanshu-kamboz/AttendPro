@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Employee Management</title>
+</head>
+
+<body class="login-body">
+    <div id="login">
+        <div id="logo">
+            <img src="logo.png" alt="Company Logo" height="50px">
+        </div>
+        <h1>AttendPro</h1>
+        <form id="login-form">
+
+            <label for="username">Username</label><br>
+            <input id="username" type="text" name="username" placeholder="Enter Username" required><br><br>
+            <label for="password">Password</label>
+
+            <div id="pass-div">
+
+                <input id="password" type="password" name="password" placeholder="Enter Password" required><br><br>
+                <button type="button" class="toggle-password" aria-label="Show password">👁</button>
+            </div>
+
+            <button id="login-button" type="submit">Login</button>
+
+        </form>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
