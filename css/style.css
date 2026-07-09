@@ -151,6 +151,7 @@ body.dashboard-body{
     border: 0;
     background-color: rgb(215, 244, 253);
     border-radius: 10px;
+    cursor: pointer;
     text-decoration: none;
 }
 
