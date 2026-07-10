@@ -37,13 +37,137 @@
 
       <button id="logoutBtn">Logout</button>
     </aside>
+
+
     <main class="main-content">
       <header class="header">
-        <h1>Reports</h1>
+        <div id="header-heading">
+           <P>HR Dashboard</P>
+        <h3>Welcome, Admin</h3>
+        </div>
+
+        <div id="time-date">
+
+          <p class="time-date" id="current-date"></p>
+          <p class="time-date" id="current-time"></p>
+
+        </div>
       </header>
-      <section class="content">
-        <p>Reports content goes here.</p>
+      <section class="hero-section">
+        <div id="hero-text">
+          <p class="text">Attendance overview</p>
+          <h2>Keep your workforce aligned and informed.</h2>
+          <p>Monitor attendance trends, manage employee information, and export insights in seconds.</p>
+        </div>
+        <div id="hero-buttons">
+          <a id="btn1" class="hero-button" href="attendance.html">Mark Attendance</a>
+          <a id="btn2" class="hero-button" href="reports.html">View Reports</a>
+        </div>
       </section>
+
+      
+      <section class="stats-grid" id="dashboardStats">
+      <div class="stat-card">
+        <div class="label">Total Employees</div>
+        <div class="value">4</div>
+        <p class="muted">Active team members</p>
+      </div>
+    
+      <div class="stat-card">
+        <div class="label">Present Today</div>
+        <div class="value">0</div>
+        <p class="muted">On-site or remote</p>
+      </div>
+    
+      <div class="stat-card">
+        <div class="label">Absent Today</div>
+        <div class="value">0</div>
+        <p class="muted">Pending follow-up</p>
+      </div>
+    
+      <div class="stat-card">
+        <div class="label">Employees on Leave</div>
+        <div class="value">0</div>
+        <p class="muted">Planned time off</p>
+      </div>
+    </section>
+
+
+    <section class="content-grid">
+          <div class="panel panel-large">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Recent activity</p>
+                <h3>Recent Attendance</h3>
+              </div>
+              <a href="history.html" class="text-link">View all</a>
+            </div>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Employee</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Department</th>
+                  </tr>
+                </thead>
+                <tbody id="recentAttendanceTable">
+            <tr>
+              <td>Alicia Chen</td>
+              <td>2026-07-07</td>
+              <td><span class="badge leave">Leave</span></td>
+              <td>Engineering</td>
+            </tr>
+            <tr>
+              <td>Daniel Brooks</td>
+              <td>2026-07-07</td>
+              <td><span class="badge wfh">Work From Home</span></td>
+              <td>HR</td>
+            </tr>
+            <tr>
+              <td>Mina Patel</td>
+              <td>2026-07-07</td>
+              <td><span class="badge absent">Absent</span></td>
+              <td>Finance</td>
+            </tr>
+            <tr>
+              <td>Soren Lee</td>
+              <td>2026-07-07</td>
+              <td><span class="badge present">Present</span></td>
+              <td>Operations</td>
+            </tr></tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Quick actions</p>
+                <h3>Fast tools</h3>
+              </div>
+            </div>
+            <div class="quick-actions">
+              <a href="employees.html" class="action-card">
+                <span>➕</span>
+                <strong>Add Employee</strong>
+              </a>
+              <a href="attendance.html" class="action-card">
+                <span>🗓</span>
+                <strong>Mark Attendance</strong>
+              </a>
+              <a href="reports.html" class="action-card">
+                <span>📤</span>
+                <strong>Export Reports</strong>
+              </a>
+              <a href="settings.html" class="action-card">
+                <span>🛡</span>
+                <strong>System Settings</strong>
+              </a>
+            </div>
+          </div>
+        </section>
     </main>
   </div>
 
