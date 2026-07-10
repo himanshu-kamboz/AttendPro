@@ -199,13 +199,24 @@ header {
 .hero-section {
     padding: 30px 40px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     background-color: white;
     border-radius: 20px;
 }
 
 #hero-buttons {
-    position: relative;
-    top: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#btn1,
+#btn2 {
+    position: static;
+    padding: 12px 20px;
+    border-radius: 10px;
 }
 
 .hero-button {
@@ -218,19 +229,18 @@ header {
 
 #btn1 {
     height: 45px;
-    width: 142px;
-    padding: 10px;
+    padding: 10px 20px;
+    background: #2e8fff;
     color: white;
-    background-color: rgb(57, 57, 188);
-    position: absolute;
-    right: -370px;
+    border-radius: 10px;
 }
 
 #btn2 {
-    color: black;
-    padding: 10px;
-    position: absolute;
-    right: -480px;
+    height: 45px;
+    padding: 10px 20px;
+    background: white;
+    color: #2e8fff;
+    border-radius: 10px;
 }
 
 .stats-grid {
