@@ -594,3 +594,9 @@ tbody td {
     border: 1px solid #58b3cf89 ;
     border-radius: 12px;
 }
+
+/* --------css for attendance.css-------- */
+
+#clearData {
+    padding: 10px;
+}
