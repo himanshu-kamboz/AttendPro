@@ -1,7 +1,12 @@
+import { updateTimeDate } from "./dashboard.js";
 
-let logoutBtn = document.getElementById("logoutBtn");
+const logoutBtn = document.getElementById("logoutBtn");
 
-logoutBtn.addEventListener("click", () => {
-    localStorage.removeItem("loggedIn");
-    window.location.href = "index.html";
-});
+if (logoutBtn) {
+    logoutBtn.addEventListener("click", () => {
+        localStorage.removeItem("loggedIn");
+        window.location.href = "index.html";
+    });
+}
+
+updateTimeDate();

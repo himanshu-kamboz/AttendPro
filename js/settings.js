@@ -1,3 +1,4 @@
+import { updateTimeDate } from js/dashboard.js;
 
 let logoutBtn = document.getElementById("logoutBtn");
 

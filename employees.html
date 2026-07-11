@@ -37,15 +37,198 @@
 
       <button id="logoutBtn">Logout</button>
     </aside>
+
     <main class="main-content">
       <header class="header">
-        <h1>Reports</h1>
+        <div class="topbar">
+          <p class="eyebrow">People management</p>
+          <h3>Employee Directory</h3>
+        </div>
+        <div id="time-date">
+
+          <p class="time-date" id="current-date"></p>
+          <p class="time-date" id="current-time"></p>
+
+        </div>
       </header>
-      <section class="content">
-        <p>Reports content goes here.</p>
+
+      <section class="content-grid two-col">
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Create or update</p>
+              <h3>Employee Form</h3>
+            </div>
+          </div>
+          <form id="employeeForm" class="stacked-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="employeeId">Employee ID</label>
+                <input id="employeeId" name="employeeId" type="text" required="">
+              </div>
+              <div class="form-group">
+                <label for="employeeName">Full Name</label>
+                <input id="employeeName" name="employeeName" type="text" required="">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="employeeEmail">Email</label>
+                <input id="employeeEmail" name="employeeEmail" type="email" required="">
+              </div>
+              <div class="form-group">
+                <label for="employeePhone">Phone</label>
+                <input id="employeePhone" name="employeePhone" type="tel" required="">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="employeeDepartment">Department</label>
+                <select id="employeeDepartment" name="employeeDepartment" required="">
+                  <option value="">Select department</option>
+                  <option>Engineering</option>
+                  <option>HR</option>
+                  <option>Finance</option>
+                  <option>Operations</option>
+                  <option>Sales</option>
+                  <option>Marketing</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="employeeDesignation">Designation</label>
+                <input id="employeeDesignation" name="employeeDesignation" type="text" required="">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="employeeJoining">Joining Date</label>
+                <input id="employeeJoining" name="employeeJoining" type="date" required="">
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Save Employee</button>
+              <button type="button" class="btn btn-ghost" id="resetEmployeeForm">Reset</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="panel panel-large">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Directory</p>
+              <h3>Employee List</h3>
+            </div>
+          </div>
+          <div class="filters">
+            <input id="employeeSearch" type="text" placeholder="Search by name or ID">
+            <select id="employeeDepartmentFilter">
+              <option value="">All departments</option>
+              <option value="Engineering">Engineering</option>
+              <option value="HR">HR</option>
+              <option value="Finance">Finance</option>
+              <option value="Operations">Operations</option>
+            </select>
+            <select id="employeeSort">
+              <option value="name">Sort by name</option>
+              <option value="joining">Sort by joining date</option>
+            </select>
+          </div>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Employee</th>
+                  <th>ID</th>
+                  <th>Department</th>
+                  <th>Designation</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="employeeTableBody">
+                <tr>
+                  <td>
+                    <div class="employee-cell">
+                      <div>
+                        <strong>Alicia Chen</strong><br>
+                        <span class="muted">alicia@attendwise.com</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>EMP001</td>
+                  <td>Engineering</td>
+                  <td>Frontend Developer</td>
+                  <td>
+                    <button class="btn btn-ghost" data-action="view" data-id="EMP001">View</button>
+                    <button class="btn btn-ghost" data-action="edit" data-id="EMP001">Edit</button>
+                    <button class="btn btn-danger" data-action="delete" data-id="EMP001">Delete</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="employee-cell">
+                      <div>
+                        <strong>Daniel Brooks</strong><br>
+                        <span class="muted">daniel@attendwise.com</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>EMP002</td>
+                  <td>HR</td>
+                  <td>HR Manager</td>
+                  <td>
+                    <button class="btn btn-ghost" data-action="view" data-id="EMP002">View</button>
+                    <button class="btn btn-ghost" data-action="edit" data-id="EMP002">Edit</button>
+                    <button class="btn btn-danger" data-action="delete" data-id="EMP002">Delete</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="employee-cell">
+                      <div>
+                        <strong>Mina Patel</strong><br>
+                        <span class="muted">mina@attendwise.com</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>EMP003</td>
+                  <td>Finance</td>
+                  <td>Analyst</td>
+                  <td>
+                    <button class="btn btn-ghost" data-action="view" data-id="EMP003">View</button>
+                    <button class="btn btn-ghost" data-action="edit" data-id="EMP003">Edit</button>
+                    <button class="btn btn-danger" data-action="delete" data-id="EMP003">Delete</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="employee-cell">
+                      <div>
+                        <strong>Soren Lee</strong><br>
+                        <span class="muted">soren@attendwise.com</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>EMP004</td>
+                  <td>Operations</td>
+                  <td>Operations Lead</td>
+                  <td>
+                    <button class="btn btn-ghost" data-action="view" data-id="EMP004">View</button>
+                    <button class="btn btn-ghost" data-action="edit" data-id="EMP004">Edit</button>
+                    <button class="btn btn-danger" data-action="delete" data-id="EMP004">Delete</button>
+                  </td>
+                </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
       </section>
+
     </main>
   </div>
+  <script src="js/dashboard.js"></script>
 </body>
 
 </html>

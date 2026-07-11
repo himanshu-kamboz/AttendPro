@@ -11,7 +11,6 @@ function updateTimeDate() {
     const now = new Date();
 
     const date = now.toLocaleDateString("en-IN", {
-        weekday: "long",
         day: "numeric",
         month: "long",
         year: "numeric"

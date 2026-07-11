@@ -166,7 +166,7 @@ main {
     gap: 20px;
 }
 
-header {
+.header {
     display: flex;
     position: relative;
 }
@@ -302,7 +302,7 @@ header {
 }
 
 .panel-header h3 {
-    font-size: 28px;
+    font-size: 20px;
     color: #0d2759;
 }
 
@@ -403,3 +403,161 @@ tbody td {
 .action-card strong {
     font-size: 18px;
 }
+
+/* --------css for employees.css-------- */
+
+.two-col{
+    display:grid;
+    grid-template-columns:420px 1fr;
+}
+
+.employee-header {
+    display: flex;
+}
+
+.stacked-form{
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.form-group label{
+    font-size:17px;
+    font-weight:500;
+    color:#1f2d3d;
+}
+
+.form-group input,
+.form-group select{
+    height:56px;
+    padding:0 18px;
+    border:1px solid #dfe7f5;
+    border-radius:16px;
+    font-size:16px;
+    background:#fafcff;
+    outline:none;
+    transition:.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus{
+    border-color:#4f7cff;
+    background:#fff;
+    box-shadow:0 0 0 4px rgba(79,124,255,.12);
+}
+
+.stacked-form{
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+    margin-top:20px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.form-group label{
+    font-size:16px;
+    font-weight:600;
+    color:#23395d;
+}
+
+.form-group input,
+.form-group select{
+    width:100%;
+    height:52px;
+    padding:0 16px;
+    font-size:15px;
+    color:#23395d;
+    background:#f9fbff;
+    border:1px solid #dce5f4;
+    border-radius:14px;
+    outline:none;
+    transition:all .3s ease;
+}
+
+.form-group input::placeholder{
+    color:#9aa7b8;
+}
+
+.form-group input:focus,
+.form-group select:focus{
+    background:#fff;
+    border-color:#2e8fff;
+    box-shadow:0 0 0 4px rgba(46,143,255,.15);
+}
+
+
+.form-actions{
+    display:flex;
+    gap:15px;
+    margin-top:10px;
+}
+
+.btn{
+    padding:10px;
+    border:none;
+    border-radius:14px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#2f6dfd;
+    color:#fff;
+}
+
+.btn-primary:hover{
+    background:#235ae8;
+}
+
+.btn-ghost{
+    background:#f5f7fb;
+    color:#222;
+}
+
+.btn-danger{
+    background:#ef2f2f;
+    color:white;
+    padding: 4px 30px;
+}
+
+.filters{
+    display:grid;
+    grid-template-columns:1fr 220px 220px;
+    gap:16px;
+    margin:25px 0;
+}
+
+.filters input,
+.filters select{
+    height:56px;
+    border-radius:16px;
+    border:1px solid #dde5f3;
+    padding:0 18px;
+    font-size:16px;
+    background:#fafcff;
+}
+
