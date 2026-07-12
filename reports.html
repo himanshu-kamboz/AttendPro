@@ -39,13 +39,99 @@
     </aside>
     <main class="main-content">
       <header class="header">
-        <h1>Reports</h1>
+        <div class="topbar">
+          <p class="eyebrow">Business Insights</p>
+          <h3>Reports Center</h3>
+        </div>
+        <div id="time-date">
+
+          <p class="time-date" id="current-date"></p>
+          <p class="time-date" id="current-time"></p>
+
+        </div>
       </header>
-      <section class="content">
-        <p>Reports content goes here.</p>
+      <section class="panel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Export-ready insights</p>
+            <h3>Attendance Analytics</h3>
+          </div>
+          <button id="exportData" class="btn btn-primary">Export JSON</button>
+        </div>
+        <div class="stats-grid reports-grid" id="reportCards">
+          <div class="stat-card">
+            <div class="label">Attendance Records</div>
+            <div class="value">4</div>
+          </div>
+          <div class="stat-card">
+            <div class="label">Present</div>
+            <div class="value">1</div>
+          </div>
+          <div class="stat-card">
+            <div class="label">Absent</div>
+            <div class="value">1</div>
+          </div>
+          <div class="stat-card">
+            <div class="label">Leave</div>
+            <div class="value">1</div>
+          </div>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Department</th>
+                <th>Present</th>
+                <th>Absent</th>
+                <th>Leave</th>
+                <th>Half Day</th>
+                <th>WFH</th>
+              </tr>
+            </thead>
+            <tbody id="reportTableBody">
+              <tr>
+                <td>Engineering</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+
+              <tr>
+                <td>HR</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+
+              <tr>
+                <td>Finance</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+
+              <tr>
+                <td>Operations</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
     </main>
   </div>
+
+  <script src="js/dashboard.js"></script>
 </body>
 
 </html>
