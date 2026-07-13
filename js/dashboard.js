@@ -54,3 +54,4 @@ function updateTimeDate() {
 updateTimeDate();
 
 setInterval(updateTimeDate, 1000);
+

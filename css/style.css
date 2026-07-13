@@ -1203,12 +1203,6 @@ tbody td {
 
     .action-btn {
         padding: 6px;
-        border: none;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        display: inline-flex;
-        align-items: center;
         gap: 8px;
     }
 
@@ -1221,7 +1215,7 @@ tbody td {
         margin-left: 10px;
     }
 
-    .upload-label{
+    .upload-label {
         width: 90%;
         margin: 10px 0 10px 10px;
     }
@@ -1250,6 +1244,17 @@ tbody td {
         width: 100%;
         padding: 0 3px;
         font-size: 10px;
+    }
+
+    .status-select {
+        width: 90px;
+        padding: 12px 10px;
+        border: 2px solid var(--border-color);
+        border-radius: 10px;
+        background: white;
+        transition: all 0.3s ease;
+        font-weight: 600;
+        color: var(--text-primary);
     }
 
     .summary-strip {
