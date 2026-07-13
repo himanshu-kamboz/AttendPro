@@ -6,6 +6,30 @@ logoutBtn.addEventListener("click", () => {
     window.location.href = "index.html";
 });
 
+// Mobile menu toggle
+const menuToggle = document.getElementById("menuToggle");
+const sidebar = document.getElementById("sidebar");
+
+if (menuToggle) {
+    menuToggle.addEventListener("click", () => {
+        sidebar.classList.toggle("active");
+    });
+
+    // Close menu when a nav link is clicked
+    const navLinks = document.querySelectorAll(".nav-link");
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            sidebar.classList.remove("active");
+        });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", (e) => {
+        if (!sidebar.contains(e.target) && !menuToggle.contains(e.target)) {
+            sidebar.classList.remove("active");
+        }
+    });
+}
 
 function updateTimeDate() {
     const now = new Date();

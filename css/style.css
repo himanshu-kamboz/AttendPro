@@ -1151,12 +1151,17 @@ tbody td {
     }
 
     thead th {
-        font-size: 12px;
+        font-size: 8px;
         padding: 12px 6px;
     }
 
+    #btn {
+        display: flex;
+        gap: 6px;
+    }
+
     tbody td {
-        padding: 12px 6px;
+        padding: 8px 4px;
         font-size: 12px;
     }
 
@@ -1182,8 +1187,8 @@ tbody td {
 
 
     .btn {
-        padding: 12px 20px;
-        margin: 0 0 20px 0;
+        padding: 9px;
+        margin: 0;
     }
 
     .btn-primary {
@@ -1193,7 +1198,7 @@ tbody td {
     .btn-danger {
         background: linear-gradient(135deg, var(--danger-color), #ff4444);
         color: white;
-        padding: 10px 24px;
+        padding: 9px;
         box-shadow: var(--shadow-sm);
     }
 
