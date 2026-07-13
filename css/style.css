@@ -796,6 +796,17 @@ tbody td {
     gap: 8px;
 }
 
+.action-btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .btn-primary {
     background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
     color: white;
@@ -823,7 +834,7 @@ tbody td {
 .btn-danger {
     background: linear-gradient(135deg, var(--danger-color), #ff4444);
     color: white;
-    padding: 10px 24px;
+    padding: 8px 15px;
     box-shadow: var(--shadow-sm);
 }
 
@@ -1120,8 +1131,10 @@ tbody td {
     }
 
     .panel {
+        padding-bottom: 20px !important;
         width: 100%;
         padding: 5px;
+        overflow-x: scroll;
     }
 
     .eyebrow {
@@ -1129,6 +1142,7 @@ tbody td {
     }
 
     .panel-header {
+        flex-direction: column;
         margin-bottom: 00px;
         padding-bottom: 10px;
     }
@@ -1140,7 +1154,9 @@ tbody td {
     }
 
     .text-link {
-        padding: 18px 18px 0 0;
+        position: relative;
+        top: -18px;
+        right: -250px;
         font-size: 13px;
         transition: all 0.3s ease;
     }
@@ -1185,6 +1201,16 @@ tbody td {
         font-size: 12px;
     }
 
+    .action-btn {
+        padding: 6px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+    }
 
     .btn {
         padding: 9px;
@@ -1195,17 +1221,27 @@ tbody td {
         margin-left: 10px;
     }
 
+    .upload-label{
+        width: 90%;
+        margin: 10px 0 10px 10px;
+    }
+
+    #exportData {
+        margin-top: 10px;
+    }
+
+    #backupData {
+        margin-top: 10px;
+    }
+
     .btn-danger {
-        background: linear-gradient(135deg, var(--danger-color), #ff4444);
-        color: white;
-        padding: 9px;
-        box-shadow: var(--shadow-sm);
+        padding: 6px;
     }
 
     .filters {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 12px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
         margin: 20px 0;
     }
 
@@ -1216,11 +1252,39 @@ tbody td {
         font-size: 10px;
     }
 
-    .filters input:focus,
-    .filters select:focus {
-        border-color: var(--primary-color);
-        box-shadow: 0 0 0 4px rgba(46, 143, 255, 0.1);
+    .summary-strip {
+        display: flex;
+        gap: 12px;
+        overflow-x: auto;
+        padding: 8px 0;
     }
 
+    .summary-pill {
+        padding: 10px 16px;
+    }
 
+    .attendance-date {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin: 10px 0 0 10px;
+    }
+
+    #attendanceDate {
+        padding: 8px 10px;
+    }
+
+    #clearData {
+        padding: 12px 20px;
+    }
+
+    .page-btn {
+        border-radius: 50%;
+        padding: 12px 18px;
+        margin: 20px 20px 0 0;
+    }
+
+    .setting-card {
+        margin: 10px;
+    }
 }
