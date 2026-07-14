@@ -991,6 +991,155 @@ tbody td {
     cursor: not-allowed;
 }
 
+body.dark-mode {
+    background: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode #sidebar {
+    background: #1b1b1b;
+    border-right: 1px solid #333;
+}
+
+body.dark-mode .main-content {
+    background: #121212;
+}
+
+body.dark-mode .panel,
+body.dark-mode .stat-card,
+body.dark-mode .hero-section,
+body.dark-mode .action-card,
+body.dark-mode .time-date {
+    background: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #333;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode label,
+body.dark-mode td,
+body.dark-mode th,
+body.dark-mode p,
+body.dark-mode strong {
+    color: #ffffff;
+}
+
+body.dark-mode table {
+    background: #1e1e1e;
+}
+
+body.dark-mode thead th {
+    background: #2b2b2b;
+    color: white;
+}
+
+body.dark-mode tbody td {
+    background: #1e1e1e;
+    color: white;
+    border-color: #444;
+}
+
+body.dark-mode tbody tr:hover {
+    background: #2d2d2d;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background: #2d2d2d;
+    color: white;
+    border: 1px solid #555;
+}
+
+body.dark-mode input::placeholder {
+    color: #bbb;
+}
+
+body.dark-mode .filters input,
+body.dark-mode .filters select,
+body.dark-mode .status-select,
+body.dark-mode #attendanceDate {
+    background: #2d2d2d;
+    color: white;
+    border: 1px solid #555;
+}
+
+body.dark-mode .summary-pill {
+    background: #2d2d2d;
+    color: white;
+    border: 1px solid #555;
+}
+
+body.dark-mode .nav-link {
+    color: #d1d5db;
+}
+
+body.dark-mode .nav-link:hover,
+body.dark-mode #current-link {
+    background: #2563eb;
+    color: white;
+}
+
+body.dark-mode .btn-ghost {
+    background: #2d2d2d;
+    color: white;
+    border: 1px solid #555;
+}
+
+body.dark-mode .btn-ghost:hover {
+    background: #3d3d3d;
+}
+
+body.dark-mode #logoutBtn {
+    background: #2d2d2d;
+    color: #ff6b6b;
+    border-color: #ff6b6b;
+}
+
+body.dark-mode #logoutBtn:hover {
+    background: #3d3d3d;
+}
+
+body.dark-mode .badge.present {
+    background: #166534;
+    color: white;
+}
+
+body.dark-mode .badge.absent {
+    background: #991b1b;
+    color: white;
+}
+
+body.dark-mode .badge.leave {
+    background: #92400e;
+    color: white;
+}
+
+body.dark-mode .badge.wfh {
+    background: #155e75;
+    color: white;
+}
+
+body.dark-mode * {
+    transition: 0.3s;
+}
+
+body,
+.sidebar,
+.main-content,
+.panel,
+.stat-card,
+table,
+input,
+select,
+button,
+.header {
+    transition: 0.3s ease;
+}
+
 @media (max-width: 992px) {
     html {
         overflow-x: hidden;

@@ -21,18 +21,18 @@
         </div>
       </div>
       <nav class="nav-links">
-        <a href="dashboard.html" class="nav-link" data-page="dashboard"><span
-            class="nav-icon">▦</span><span class="icon-name">Dashboard</span></a>
+        <a href="dashboard.html" class="nav-link" data-page="dashboard"><span class="nav-icon">▦</span><span
+            class="icon-name">Dashboard</span></a>
         <a href="employees.html" id="current-link" class="nav-link" data-page="employees"><span
             class="nav-icon">👥</span><span class="icon-name">Employees</span></a>
-        <a href="attendance.html" class="nav-link" data-page="attendance"><span
-            class="nav-icon">✓</span><span class="icon-name">Attendance</span></a>
-        <a href="history.html" class="nav-link" data-page="history"><span
-            class="nav-icon">📜</span><span class="icon-name">History</span></a>
-        <a href="reports.html" class="nav-link active" data-page="reports"><span
-            class="nav-icon">📈</span><span class="icon-name">Reports</span></a>
-        <a href="settings.html" class="nav-link" data-page="settings"><span
-            class="nav-icon">⚙</span><span class="icon-name">Settings</span></a>
+        <a href="attendance.html" class="nav-link" data-page="attendance"><span class="nav-icon">✓</span><span
+            class="icon-name">Attendance</span></a>
+        <a href="history.html" class="nav-link" data-page="history"><span class="nav-icon">📜</span><span
+            class="icon-name">History</span></a>
+        <a href="reports.html" class="nav-link active" data-page="reports"><span class="nav-icon">📈</span><span
+            class="icon-name">Reports</span></a>
+        <a href="settings.html" class="nav-link" data-page="settings"><span class="nav-icon">⚙</span><span
+            class="icon-name">Settings</span></a>
       </nav>
 
       <button id="logoutBtn">Logout</button>
@@ -145,82 +145,11 @@
                 </tr>
               </thead>
               <tbody id="employeeTableBody">
-                <tr>
-                  <td>
-                    <div class="employee-cell">
-                      <div>
-                        <strong>Alicia Chen</strong><br>
-                        <span class="muted">alicia@attendwise.com</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td>EMP001</td>
-                  <td>Engineering</td>
-                  <td>Frontend Developer</td>
-                  <td id="btn">
-                    <button class="action-btn btn-ghost" data-action="view" data-id="EMP003"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg></button>
-                    <button class="action-btn btn-ghost" data-action="edit" data-id="EMP003"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-pen-icon lucide-square-pen"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"/></svg></button>
-                    <button class="action-btn btn-danger" data-action="delete" data-id="EMP003"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-x-icon lucide-user-round-x"><path d="M2 21a8 8 0 0 1 11.873-7"/><circle cx="10" cy="8" r="5"/><path d="m17 17 5 5"/><path d="m22 17-5 5"/></svg></button>
-                  </td>
-                </tr>
+                <!-- Employee rows will be dynamically inserted here -->
 
-                <tr>
-                  <td>
-                    <div class="employee-cell">
-                      <div>
-                        <strong>Daniel Brooks</strong><br>
-                        <span class="muted">daniel@attendwise.com</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td>EMP002</td>
-                  <td>HR</td>
-                  <td>HR Manager</td>
-                  <td id="btn">
-                    <button class="action-btn btn-ghost" data-action="view" data-id="EMP003"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg></button>
-                    <button class="action-btn btn-ghost" data-action="edit" data-id="EMP003"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-pen-icon lucide-square-pen"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"/></svg></button>
-                    <button class="action-btn btn-danger" data-action="delete" data-id="EMP003"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-x-icon lucide-user-round-x"><path d="M2 21a8 8 0 0 1 11.873-7"/><circle cx="10" cy="8" r="5"/><path d="m17 17 5 5"/><path d="m22 17-5 5"/></svg></button>
-                  </td>
-                </tr>
 
-                <tr>
-                  <td>
-                    <div class="employee-cell">
-                      <div>
-                        <strong>Mina Patel</strong><br>
-                        <span class="muted">mina@attendwise.com</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td>EMP003</td>
-                  <td>Finance</td>
-                  <td>Analyst</td>
-                  <td id="btn">
-                    <button class="action-btn btn-ghost" data-action="view" data-id="EMP003"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg></button>
-                    <button class="action-btn btn-ghost" data-action="edit" data-id="EMP003"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-pen-icon lucide-square-pen"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"/></svg></button>
-                    <button class="action-btn btn-danger" data-action="delete" data-id="EMP003"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-x-icon lucide-user-round-x"><path d="M2 21a8 8 0 0 1 11.873-7"/><circle cx="10" cy="8" r="5"/><path d="m17 17 5 5"/><path d="m22 17-5 5"/></svg></button>
-                  </td>
-                </tr>
 
-                <tr>
-                  <td>
-                    <div class="employee-cell">
-                      <div>
-                        <strong>Soren Lee</strong><br>
-                        <span class="muted">soren@attendwise.com</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td>EMP004</td>
-                  <td>Operations</td>
-                  <td>Operations Lead</td>
-                  <td id="btn">
-                    <button class="action-btn btn-ghost" data-action="view" data-id="EMP004"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg></button>
-                    <button class="action-btn btn-ghost" data-action="edit" data-id="EMP004"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-pen-icon lucide-square-pen"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"/></svg></button>
-                    <button class="action-btn btn-danger" data-action="delete" data-id="EMP004"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-x-icon lucide-user-round-x"><path d="M2 21a8 8 0 0 1 11.873-7"/><circle cx="10" cy="8" r="5"/><path d="m17 17 5 5"/><path d="m22 17-5 5"/></svg></button>
-                  </td>
-                </tr>
-                </tbody>
+              </tbody>
             </table>
           </div>
         </div>
