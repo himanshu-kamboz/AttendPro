@@ -2,6 +2,12 @@ let editEmployeeId = null;
 
 const saveAttendanceBtn = document.getElementById("saveAttendance");
 
+const isLoggedIn = localStorage.getItem("loggedIn");
+
+if (isLoggedIn !== "true") {
+    window.location.href = "index.html";
+}
+
 if (saveAttendanceBtn) {
     saveAttendanceBtn.addEventListener("click", saveAttendance);
 }
@@ -158,7 +164,6 @@ function displayEmployees() {
                 <td>${employee.department}</td>
                 <td>${employee.designation}</td>
                 <td>
-                    <button class="action-btn btn-ghost" data-action="view" data-id="EMP003"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg></button>
                    <button class="action-btn btn-ghost"
                     onclick="editEmployee('${employee.id}')"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-pen-icon lucide-square-pen"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"/></svg></button>
                    <button class="action-btn btn-danger"
